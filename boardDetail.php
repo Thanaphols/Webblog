@@ -28,6 +28,7 @@
                     </script>'; 
                 unset($_SESSION['delete']);
             }
+            
             $boardID = $_GET['boardID'];
             $boardSql = 'SELECT board.boardHeader, board.boardBody,board.userID AS userBoardID, board.categoryID,board.boardImage,board.boardDate,board.boardTime ,
                     users.firstName AS userBoardFirstName , users.lastName AS userBoardLastName , users.userImage ,
